@@ -17,7 +17,11 @@ a {
 }
 header{
     padding: 1rem 0rem 0rem 0rem;
-    background-color: #8058fa93;  
+    background-color: #f4f3ffc4; 
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; 
     display: flex;
     flex-wrap: wrap;
 }
@@ -186,16 +190,99 @@ footer{
 }
 
 @media screen and (min-width: 481px) {
+    header {
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0; 
+    
+    }
     .tittle {
         display: none;
     }
 }
 
 @media screen and (min-width: 769px) {
+    header {
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0; 
     
+    }
 
+    .container_header{
+        width: 90%;
+        margin: auto;
+    }
+    .wrapper_header {
+        flex-direction: row;     
+        justify-content: space-between;
+    }
+    .header_right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header_left {
+        height: 2rem;
+    }
+    .header_logo {
+        width: auto;
+        height: 95%;
+    }
+    .tittle {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-self: center;
+        text-align: center
+    }
+    main article{
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
 
+    article {
+        width: 60%;
+        display: flex;
+        margin: auto;
+        flex-direction: row-reverse;
+    }
+    .banner {
+        width: 40%;
+    }
+    
+    .box_p {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos salten a nuevas filas */
+        gap: 1rem; /* Espaciado entre columnas */
+        height: 60%;
+        color: white;
+        background-color: #604aff;
+        padding: 2.5rem;
+        border-radius: 1rem;
+    }
+    
+    blockquote {
+        flex: 1 1 150px; /* Ancho mínimo de 150px, ajustable */
+        font-weight: 1000;
+        margin: 0; /* Simplificación */
+        font-size: 1.2rem;
+    }
+    .box_p_bottom {
+        display: flex;
+        align-items: flex-end;
+        font-size: .7rem;
+        width: 15%;
+    }
 
+    .footer_top {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
     .footer_top_l {
         width: 20%;
     }
@@ -204,13 +291,12 @@ footer{
         display: block;
         width: 90%;
     }
-    .footer_top {
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-    }
     .footer_top_c {
-        width: 50%;
+        width: 45%;
     }
-    
+    .footer_top_r {
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly; 
+    }
 }
