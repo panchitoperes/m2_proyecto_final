@@ -13,6 +13,7 @@ button, a {
 }
 a {
     text-decoration: none;
+    color: inherit; /* Mejor accesibilidad */
 }
 header{
     padding: 1rem 0rem 0rem 0rem;
@@ -70,7 +71,6 @@ h1 {
 }
 
 h4 {
-    margin-top: 0;
     font-weight: 400;
 }
 
@@ -80,7 +80,8 @@ h2 {
     color: #122130;
 }
 article {
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .figure_description {
     padding: 1.5rem;
@@ -138,40 +139,15 @@ footer{
 }
 .footer_logo {
     display: none;
-    width: 10em;
 }
 
 .ig, .x, .fb, .yt {
     margin: .5rem;
     width: 2rem;
 }
-
-
-
-
-@media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 768px) {
-    
-}
-
-
-.container_footer {
-
-}
-.wrapper_bottom {
-}
 .footer_top {
     width: 95%;
     margin: auto;
-}
-.footer_top_l {
-}
-.footer_logo {
-}
-.footer_top_c {
 }
 .footer_slogan {
     font-size: 2rem;
@@ -188,7 +164,53 @@ footer{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.footer_top_r nav{
+    padding-top: 2rem;
+}
+.footer_top_r h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.footer_top_r ul{
+    padding-inline-start: 0;
+    list-style: none;
+    color: white;
+}
+.footer_top_r a{
+    color: white;
+}
+
 .footer_bottom {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 481px) {
+    .tittle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
+
+
+
+    .footer_top_l {
+        width: 20%;
+    }
+    .footer_logo{
+        margin-top: 2rem;
+        display: block;
+        width: 90%;
+    }
+    .footer_top {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .footer_top_c {
+        width: 50%;
+    }
+    
 }
