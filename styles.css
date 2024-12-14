@@ -180,7 +180,7 @@ footer{
     display: none;
 }
 
-.ig, .x, .fb, .yt {
+.footer_icon {
     margin: .5rem;
     width: 2rem;
 }
