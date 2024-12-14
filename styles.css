@@ -112,8 +112,8 @@ article {
 
 .buttons_article_container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva fila si no hay espacio */
-    gap: 1rem; /* Espaciado entre botones */
+    flex-wrap: wrap; /* los elementos se muevan a una nueva fila si no hay espacio */
+    gap: 1rem; /* Espaciado */
     align-items: center; /* Alinea verticalmente en el centro */
     padding: 1rem;
 }
